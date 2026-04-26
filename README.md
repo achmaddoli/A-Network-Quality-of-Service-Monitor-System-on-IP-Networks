@@ -133,8 +133,14 @@ doli
 | 📊 QoS Data Records | 📡 Real-Time Trend Graphs |
 | :---: | :---: |
 |  |  |
-| [cite_start]*Tampilan tabel metrik mentah dari Agen Pi* [cite: 137] | [cite_start]*Tren visual untuk Bandwidth, Latency, dan Jitter* [cite: 178] |
+| [*Tampilan tabel metrik mentah dari Agen Pi* [cite: 137] | [cite_start]*Tren visual untuk Bandwidth, Latency, dan Jitter* [cite: 178] |
 
+### 🎥 Video Demonstrations
+*Click the thumbnails below to watch the system in action.*
+
+#### **1. Real Simulation (Outside Palembang City)**
+[![Real Simulation Video](https://img.youtube.com/vi/UiRfMmB3ZiQ/0.jpg)](https://youtu.be/UiRfMmB3ZiQ)
+> **Simulation Focus:** 
 ---
 
 ## 📈 Learning Journey
