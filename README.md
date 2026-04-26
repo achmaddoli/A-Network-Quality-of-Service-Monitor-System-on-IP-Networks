@@ -8,96 +8,106 @@
 
 ## 🧠 Why I Built This
 
-[cite_start]Ketergantungan yang semakin tinggi pada layanan internet untuk operasi kritis menuntut jaringan yang andal dan berkinerja tinggi[cite: 8]. [cite_start]Namun, tantangan utama seperti **keterbatasan bandwidth, latency, jitter, dan packet loss** sering kali menjadi hambatan besar yang menurunkan kepuasan pengguna dan efisiensi operasional[cite: 9].
+The increasing reliance on internet services for critical operations highlights the absolute necessity for reliable and high-performing networks. However, network administrators often face structural challenges such as bandwidth limitations, latency, jitter, and packet loss, which significantly impact operational efficiency and user satisfaction.
 
-Selama masa studi saya di Taiwan, saya mengamati bahwa pemantauan jaringan tradisional sering kali kurang memiliki detail *real-time* yang dibutuhkan untuk mengidentifikasi masalah secara proaktif.
+During my research, I observed that traditional monitoring often lacks the real-time granularity needed to proactively identify issues before they cause service disruptions.
+This led to a key objective:
 
-Hal ini memicu pertanyaan kunci:
-
-> [cite_start]*Bagaimana kita bisa membangun sistem pemantauan yang kokoh untuk mengukur metrik jaringan secara presisi demi menjamin reliabilitas pada jaringan IP?* [cite: 10]
+> *How can we implement a robust monitoring system that precisely measures and analyzes key network metrics to ensure optimized reliability in IP networks?* 
 
 ---
 
 ## 🚀 What I Built
 
-Saya mengembangkan **ekosistem pemantauan QoS (Quality of Service) terdistribusi** yang memungkinkan administrator jaringan untuk:
+I developed a distributed Quality of Service (QoS) monitoring system that enables institutions to:
 
-* [cite_start]Mengukur dan menganalisis metrik kritis (**Bandwidth, Latency, Jitter, dan Packet Loss**) secara *real-time*[cite: 72].
-* [cite_start]Menyebarkan **Measurement Agents** yang hemat biaya di berbagai subnet untuk menangkap data yang granular[cite: 65, 73].
-* [cite_start]Memanfaatkan pipa data yang mulus melalui protokol **MQTT** untuk transmisi data berintegritas tinggi[cite: 25, 45].
-* [cite_start]Memantau kesehatan jaringan dari jarak jauh melalui **dashboard interaktif dan intuitif**[cite: 76].
-
-[cite_start]Ini lebih dari sekadar tes kecepatan biasa — ini adalah **fondasi untuk optimasi kinerja jaringan**[cite: 68, 70].
+* Measure and analyze critical metrics (bandwidth, latency, jitter, and packet loss) in real-time.
+* Deploy cost-effective Measurement Agents across various subnets to capture granular data
+* Utilize a seamless data pipeline via the MQTT protocol for high-integrity transmission.
+* Monitor network health remotely through an interactive, intuitive dashboard
+  
+This is more than a simple speed test — it is a foundation for network performance optimization.
 
 ---
 
 ## 🎯 Project Context
 
-* [cite_start]**Type:** International Student Project (IISMA 2024)[cite: 6].
-* [cite_start]**Field:** Network Engineering & IoT[cite: 2, 242].
-* [cite_start]**Institution:** National Formosa University (NFU), Taiwan[cite: 222, 242].
-* **Validation:** Dikembangkan di **IoT and Intelligent Cloud Application Lab** di bawah bimbingan **Prof. [cite_start]Hui-Kai Su**[cite: 242, 189].
-
+* **Type:** International Student Project (IISMA 2024)
+* **Field:** Network Engineering & IoT.
+* **Institution:** National Formosa University (NFU), Taiwan
+* **Validation:** Developed in the IoT and Intelligent Cloud Application Lab under the guidance of Prof. Hui-Kai Su.
 ---
 
 ## ⚙️ My Approach (How I Think)
 
-Alih-alih menggunakan solusi pemantauan terpusat yang mahal, saya berfokus pada tiga prinsip rekayasa:
+Instead of a centralized, expensive monitoring solution, I focused on three engineering principles:
 
 ### 1. Distributed Scalability
-Pemantauan standar sering melewatkan masalah yang terjadi di cabang jaringan tertentu.
-[cite_start]➡️ Saya menggunakan perangkat **Raspberry Pi 4 sebagai agen** yang ditempatkan di berbagai subnet (A, B, C, D) untuk mengumpulkan data lokal yang presisi[cite: 24, 65].
+Standard monitoring often misses issues occurring in specific network branches.
+➡️ I utilized Raspberry Pi 4 devices as agents deployed across Subnets A, B, C, and D to collect precise local data.
 
 ### 2. Integration of Hardware & Software
-Wawasan yang akurat membutuhkan jembatan yang mulus antara lapisan fisik dan digital.
-[cite_start]➡️ Saya mengintegrasikan *hardware* **Raspberry Pi 4** dengan alat *software* seperti **iPerf3** dan **MariaDB** untuk manajemen data yang terstruktur[cite: 79].
+Accurate insights require a seamless bridge between the physical and digital layers.
+➡️ I integrated Raspberry Pi 4 hardware with software tools like iPerf3 and MariaDB for structured data management.
 
 ### 3. Actionable Visualization
-Data mentah sering kali sulit diinterpretasikan dengan cepat oleh administrator.
-[cite_start]➡️ Saya berfokus pada transformasi metrik kompleks menjadi **format visual yang intuitif**, memungkinkan pengambilan keputusan dan penyelesaian masalah yang lebih cepat[cite: 80].
+Raw data is complex and often difficult for administrators to interpret quickly.
+➡️ I focused on transforming complex metrics into intuitive visual formats, enabling faster decision-making and quicker issue resolution.
 
 ---
 
 ## 🚀 Key Features
-* [cite_start]**📊 Real-Time Tracking:** Pengukuran presisi bandwidth, latency, jitter, dan packet loss menggunakan iPerf3[cite: 31, 69].
-* **📡 MQTT Communication:** Transmisi data via MQTT Broker untuk distribusi *real-time* dan pengantrean pesan[cite: 37, 43, 45].
-* [cite_start]**📊 Centralized Monitor Server:** Server khusus yang berlangganan topik, memvalidasi data masuk, dan mengelola penyimpanan[cite: 46, 50].
-* [cite_start]**💾 Historical Analysis:** Data yang divalidasi disimpan di **MariaDB** untuk memfasilitasi audit kinerja jangka panjang[cite: 54].
-* **🖥️ Interactive Dashboard:** Antarmuka web *real-time* yang menyediakan representasi grafis dari kinerja jaringan saat ini dan historis[cite: 55, 60].
-
+* **📍Real-Time Tracking:** Precise measurement of bandwidth, latency, jitter, and packet loss using iPerf3.
+* **📡 MQTT Communication:** Data transmission via MQTT Broker for real-time distribution and message queuing.
+* **📊 Centralized Monitor Server:** A dedicated server that subscribes to topics, validates incoming data, and manages storage.
+* **💾 Historical Analysis:** Validated data is stored in MariaDB to facilitate long-term performance auditing.
+* **🖥️ Interactive Dashboard:** A real-time web interface providing graphical representations of current and historical network performance.
 ---
 
 ## 🧠 Comprehensive Reasoning (The "Why")
 
-### **The Problem: Network Blind Spots**
-Tantangan jaringan seperti batasan bandwidth dan latency tinggi menyebabkan kinerja buruk dan ketidakpuasan pengguna[cite: 9].
-* [cite_start]**Operational Gap:** Tanpa visibilitas *real-time*, administrator tidak dapat menyelesaikan masalah secara proaktif, yang berujung pada pemeliharaan yang bersifat reaktif[cite: 64].
-
+### **The Problem: Network Disruptions**
+Critical network challenges like bandwidth caps and high latency lead to poor performance and user dissatisfaction.
+* **Operational Gap:** Without real-time visibility, administrators cannot proactively resolve issues, leading to reactive maintenance.
+  
 ### **The Solution: Why Agents & MQTT?**
-1. [cite_start]**Precision Logic:** Agen terdistribusi memungkinkan pengumpulan data yang akurat di seluruh konfigurasi jaringan yang beragam[cite: 63].
-2. [cite_start]**Data Integrity:** Protokol **MQTT** menjaga konsistensi dan integritas selama penerimaan data secara *real-time*[cite: 45].
-3. [cite_start]**Automated Ecosystem:** Integrasi *hardware* dan *software* menggantikan beban kerja pemantauan manual dengan sistem yang kohesif dan otomatis[cite: 69].
+1. **Precision Logic:** Precision Logic: Distributed agents allow for accurate data collection across a diverse network configuration.
+2. **Data Integrity:** The MQTT protocol maintains consistency and integrity during real-time dataReception.
+3. **Automated Ecosystem:** Integration of hardware and software replaces manual monitoring workloads with a cohesive, automated system.
+
+---
+
+## Real-World Impact
+- **Network Reliability**: Administrators can proactively identify and resolve network issues, significantly enhancing user satisfaction.
+- **Efficiency**: Transforming complex network data into actionable insights through clear visualization.
+
+---
+
+## 📚 Academic Achievement
+The methodology and results of this project were peer-reviewed and documented:
+- Title: "A Network QoS Monitor System on IP Networks".
+- Award: IISMA 2024 Project Completion at National Formosa University.
 
 ---
 
 ## 🛠️ Tech Stack
 | Category | Tools & Technologies |
 | :--- | :--- |
-| **Hardware** | [cite_start]Raspberry Pi 4 Model B, TP-Link AC1750[cite: 273, 276]. |
-| **Backend** | [cite_start]Python, MariaDB (MySQL), MQTT (Mosquitto)[cite: 280, 289, 292]. |
-| [cite_start]**Network Tools**| iPerf3 (Traffic Analysis), MQTT Protocol[cite: 277, 286]. |
-| **Visualization**| [cite_start]Real-Time Dashboard with Graphical Representation[cite: 271]. |
+| **Hardware** | Raspberry Pi 4 Model B, TP-Link AC1750 |
+| **Backend** | Python, MariaDB (MySQL), MQTT (Mosquitto) |
+| **Network Tools**| iPerf3 (Traffic Analysis), MQTT Protocol |
+| **Visualization**|  Real-Time Dashboard with Graphical Representation |
 
 ---
 
 ## 🔄 Full System Workflow
 
 ### 1. System Architecture
-1. [cite_start]**Agent Initialization:** Agen Raspberry Pi menyiapkan konfigurasi *hardware* dan *software*[cite: 30].
-2. [cite_start]**Measurement:** Agen mengukur parameter QoS menggunakan iPerf3[cite: 31].
-3. [cite_start]**Transmission:** Data yang divalidasi dan diformat dipublikasikan ke **MQTT Broker**[cite: 37].
-4. [cite_start]**Processing:** **QoS Monitor Server** berlangganan topik terkait, memvalidasi data, dan menyimpannya di **MariaDB**[cite: 48, 54].
-5. [cite_start]**Visualization:** **Real-Time Dashboard** memproses catatan database untuk memperbarui grafik dan tabel yang intuitif[cite: 55].
+1. **Agent Initialization:** Agen Raspberry Pi menyiapkan konfigurasi *hardware* dan *software*[cite: 30].
+2. **Measurement:** Agen mengukur parameter QoS menggunakan iPerf3[cite: 31].
+3. **Transmission:** Data yang divalidasi dan diformat dipublikasikan ke **MQTT Broker**[cite: 37].
+4. **Processing:** **QoS Monitor Server** berlangganan topik terkait, memvalidasi data, dan menyimpannya di **MariaDB**[cite: 48, 54].
+5. **Visualization:** **Real-Time Dashboard** memproses catatan database untuk memperbarui grafik dan tabel yang intuitif[cite: 55].
 
 ---
 
