@@ -85,8 +85,8 @@ Critical network challenges like bandwidth caps and high latency lead to poor pe
 
 ## 📚 Academic Achievement
 The methodology and results of this project were peer-reviewed and documented:
-- Title: "A Network QoS Monitor System on IP Networks".
-- Award: IISMA 2024 Project Completion at National Formosa University.
+- Title: "A Network QoS Monitor System on IP Networks"
+- Award: IISMA 2024 Project Completion at National Formosa University
 
 ---
 
@@ -103,18 +103,18 @@ The methodology and results of this project were peer-reviewed and documented:
 ## 🔄 Full System Workflow
 
 ### 1. System Architecture
-1. **Agent Initialization:** Agen Raspberry Pi menyiapkan konfigurasi *hardware* dan *software*[cite: 30].
-2. **Measurement:** Agen mengukur parameter QoS menggunakan iPerf3[cite: 31].
-3. **Transmission:** Data yang divalidasi dan diformat dipublikasikan ke **MQTT Broker**[cite: 37].
-4. **Processing:** **QoS Monitor Server** berlangganan topik terkait, memvalidasi data, dan menyimpannya di **MariaDB**[cite: 48, 54].
-5. **Visualization:** **Real-Time Dashboard** memproses catatan database untuk memperbarui grafik dan tabel yang intuitif[cite: 55].
-
+1. **Agent Initialization:** Agen Raspberry Pi menyiapkan konfigurasi *hardware* dan *software*.
+2. **Measurement:** Agents measure QoS parameters using iPerf3.
+3. **Transmission:** Validated and formatted data is published to the **MQTT Broker**.
+4. **Processing:** The **QoS Monitor Server** subscribes to relevant topics, validates the data, and stores it in **MariaDB**.
+5. **Visualization:** The **Real-Time Dashboard** processes the database records to update intuitive graphs and tables.
+   
 ---
 
 ## 📺 Visuals & Simulation
 
 ### 💻 Dashboard Interface
-*Dashboard memberikan wawasan yang jelas tentang kinerja jaringan di seluruh subnet.*
+*The dashboard provides clear insights into network performance across subnets.*
 
 | 📊 QoS Data Records | 📡 Real-Time Trend Graphs |
 | :---: | :---: |
@@ -127,11 +127,11 @@ The methodology and results of this project were peer-reviewed and documented:
 
 ### **⚠️ Challenges & Overcoming Them**
 1. **Data Inconsistencies**
-   * **Challenge:** Selama penerimaan, beberapa paket data mungkin tidak konsisten atau mengandung kesalahan.
-   * [cite_start]**Overcoming:** Saya mengimplementasikan fase **Validasi Data** di tingkat server, mencatat data yang tidak valid untuk *debugging* guna memastikan hanya metrik akurat yang disimpan dan divisualisasikan[cite: 50, 51].
-
+   * **Challenge:** During reception, some data packets might be inconsistent or contain errors.
+   * **Overcoming:** I implemented a Data Validation phase at the server level, logging invalid data for debugging to ensure only accurate metrics are stored and visualized.
+     
 ### **What I Learned**
-[cite_start]Bekerja di **IoT and Intelligent Cloud Application Lab** di Taiwan mengasah keterampilan saya dalam **Integrasi Data dan Pemecahan Masalah Tingkat Lanjut**[cite: 79, 81]. [cite_start]Saya belajar menguasai integrasi *hardware* Raspberry Pi 4 dengan alat *software* yang kokoh, mengembangkan pemahaman komprehensif tentang sinkronisasi sistem *real-time*[cite: 63, 69]. [cite_start]Di luar keterampilan teknis, bekerja di lingkungan multidisiplin mengembangkan kemampuan **Collaborative Development** saya[cite: 82].
+Working at the IoT and Intelligent Cloud Application Lab in Taiwan sharpened my skills in Data Integration and Advanced Problem-Solving. I learned to master the integration of hardware like Raspberry Pi 4 with robust software tools, developing a comprehensive understanding of real-time system synchronization. Beyond technical skills, working in a multidisciplinary environment developed my Collaborative Development capabilities, ensuring diverse components integrate into one cohesive system.
 
 ---
-*Developed with ❤️ during IISMA at National Formosa University*
+
