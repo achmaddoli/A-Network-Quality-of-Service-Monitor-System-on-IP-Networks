@@ -114,6 +114,14 @@ The methodology and results of this project were peer-reviewed and documented:
    
 ---
 
+## 🌐 Live System Access
+You can explore the live monitoring dashboard directly through the link below:
+### Link: https://hksu.ee.nfu.edu.tw/netqos/webqos/dashboard/index.php
+**Username**: doli
+**Password**: doli
+
+---
+
 ## 📺 Visuals & Simulation
 
 ### 💻 Dashboard Interface
