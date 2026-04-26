@@ -44,14 +44,17 @@ Instead of a centralized, expensive monitoring solution, I focused on three engi
 
 ### 1. Distributed Scalability
 Standard monitoring often misses issues occurring in specific network branches.
+
 ➡️ I utilized Raspberry Pi 4 devices as agents deployed across Subnets A, B, C, and D to collect precise local data.
 
 ### 2. Integration of Hardware & Software
 Accurate insights require a seamless bridge between the physical and digital layers.
+
 ➡️ I integrated Raspberry Pi 4 hardware with software tools like iPerf3 and MariaDB for structured data management.
 
 ### 3. Actionable Visualization
 Raw data is complex and often difficult for administrators to interpret quickly.
+
 ➡️ I focused on transforming complex metrics into intuitive visual formats, enabling faster decision-making and quicker issue resolution.
 
 ---
