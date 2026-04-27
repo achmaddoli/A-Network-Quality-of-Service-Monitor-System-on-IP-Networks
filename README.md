@@ -32,9 +32,10 @@ This is more than a simple speed test — it is **a real-time network intelligen
 
 ## 🎯 Project Context
 
-* **Type:** International Student Project (IISMA 2024)
+*  **Project Type:** GROUP PROJECT (IISMA Research Project)
 * **Field:** Network Engineering & IoT.
 * **Institution:** National Formosa University (NFU), Taiwan
+* **My Role:** System Designer & Developer
 * **Validation:** Developed in the IoT and Intelligent Cloud Application Lab under the guidance of Prof. Hui-Kai Su.
 ---
 
@@ -106,7 +107,7 @@ Critical network challenges like bandwidth caps and high latency lead to poor pe
   
 ### **The Solution: Why Agents & MQTT?**
 1. **Precision Logic:** Precision Logic: Distributed agents allow for accurate data collection across a diverse network configuration.
-2. **Data Integrity:** The MQTT protocol maintains consistency and integrity during real-time dataReception.
+2. **Data Integrity:** The MQTT protocol maintains consistency and integrity during real-time data reception.
 3. **Automated Ecosystem:** Integration of hardware and software replaces manual monitoring workloads with a cohesive, automated system.
 
 ---
@@ -137,7 +138,7 @@ The methodology and results of this project were peer-reviewed and documented:
 ## 🔄 Full System Workflow
 
 ### 1. System Architecture
-1. **Agent Initialization:** Agen Raspberry Pi menyiapkan konfigurasi *hardware* dan *software*.
+1. **Agent Initialization:** Raspberry Pi configures hardware and software.
 2. **Measurement:** Agents measure QoS parameters using iPerf3.
 3. **Transmission:** Validated and formatted data is published to the **MQTT Broker**.
 4. **Processing:** The **QoS Monitor Server** subscribes to relevant topics, validates the data, and stores it in **MariaDB**.
@@ -182,6 +183,16 @@ doli
 
 > **Simulation Focus:**  
 > Demonstrates real-time QoS data collection from distributed Raspberry Pi agents, including bandwidth, latency, jitter, and packet loss, along with data transmission via MQTT and visualization on the monitoring dashboard.
+
+---
+
+## 📊 Key Findings
+
+- Stable bandwidth performance (~1 Mbps)
+- Extremely high latency (~120,000 ms)
+
+🚨 Insight:
+The system revealed a critical network bottleneck, showing that stable bandwidth does not guarantee low latency, highlighting the need for deeper QoS monitoring in real-world environments.
 
 ---
 
