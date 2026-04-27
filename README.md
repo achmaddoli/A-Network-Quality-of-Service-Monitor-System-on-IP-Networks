@@ -123,7 +123,9 @@ The methodology and results of this project were peer-reviewed and documented:
 - Title: "A Network QoS Monitor System on IP Networks"
 - Award: IISMA 2024 Project Completion at National Formosa University
 <p align="center">
-  <img src="Achmad Doli Harahap_Sertifikat Project IISMA_page-0001.jpg" alt="IISMA 2024 Certificate" width="600px" style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+  <a href="path/to/your/certificate.pdf">
+    <img src="Achmad Doli Harahap_Sertifikat Project IISMA_page-0001.jpg" alt="IISMA 2024 Certificate" width="250px" style="border: 1px solid #eee; border-radius: 5px;"/>
+  </a>
 </p>
 
 ---
