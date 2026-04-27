@@ -173,12 +173,15 @@ doli
   </em>
 </p>
 
-### 🎥 Video Demonstrations
-*Click the thumbnails below to watch the system in action.*
+### 🎥 Video Demonstration
+*Click the thumbnail below to watch the system in action.*
 
-#### **1. Real Simulation (Outside Palembang City)**
-[![Real Simulation Video](https://img.youtube.com/vi/UiRfMmB3ZiQ/0.jpg)](https://youtu.be/UiRfMmB3ZiQ)
-> **Simulation Focus:** 
+#### **Real-Time QoS Monitoring Simulation**
+[![QoS Monitoring Demo](https://img.youtube.com/vi/UiRfMmB3ZiQ/0.jpg)](https://youtu.be/UiRfMmB3ZiQ)
+
+> **Simulation Focus:**  
+> Demonstrates real-time QoS data collection from distributed Raspberry Pi agents, including bandwidth, latency, jitter, and packet loss, along with data transmission via MQTT and visualization on the monitoring dashboard.
+
 ---
 
 ## 📈 Learning Journey
