@@ -78,8 +78,15 @@ Raw data is complex and often difficult for administrators to interpret quickly.
 
 ## 🏗️ System Architecture
 
+<p align="center">
+  <img src="Topologi.png" alt="System Architecture" width="500"/>
+</p>
 
-This architecture illustrates how distributed agents collect network data, transmit it via MQTT, process it in a centralized server, and visualize insights in real time.
+<p align="center">
+  <em>
+The system architecture consists of distributed QoS measurement agents deployed across multiple subnets (A–D) that collect network performance metrics and transmit them via MQTT to a centralized monitoring server integrated with a MariaDB database for storage and analysis. Administrators can remotely access real-time and historical network insights through a web-based dashboard, enabling efficient monitoring and troubleshooting of network performance.
+  </em>
+</p>
 
 ---
 
@@ -154,10 +161,17 @@ doli
 ### 💻 Dashboard Interface
 *The dashboard provides clear insights into network performance across subnets.*
 
-| 📊 QoS Data Records | 📡 Real-Time Trend Graphs |
-| :---: | :---: |
-|  |  |
-| [*Tampilan tabel metrik mentah dari Agen Pi* [cite: 137] | [cite_start]*Tren visual untuk Bandwidth, Latency, dan Jitter* [cite: 178] |
+<p align="center">
+  <img src="Dashboard.png" alt="QoS Trend Graphs on Raspberry Pi 1" width="32%"/>
+  <img src="Data Raspberry 1.png" alt="QoS Data Raspberry Pi 1" width="32%"/>
+  <img src="Data Raspberry 2.png" alt="QoS Data Raspberry Pi 2" width="32%"/>
+</p>
+
+<p align="center">
+  <em>
+  From left to right: real-time QoS trend visualization, raw QoS data from Raspberry Pi 1, and multi-agent monitoring data from Raspberry Pi 2.
+  </em>
+</p>
 
 ### 🎥 Video Demonstrations
 *Click the thumbnails below to watch the system in action.*
