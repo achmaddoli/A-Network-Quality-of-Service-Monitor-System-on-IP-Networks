@@ -178,7 +178,7 @@ doli
 *Click the thumbnail below to watch the system in action.*
 
 #### **Real-Time QoS Monitoring Simulation**
-[![QoS Monitoring Demo](https://img.youtube.com/vi/UiRfMmB3ZiQ/0.jpg)](https://youtu.be/UiRfMmB3ZiQ)
+[![QoS Monitoring Demo](https://img.youtube.com/vi/yh7UTDM0ioo/0.jpg)](https://youtu.be/yh7UTDM0ioo?si=g5CrX00akOpRSh4s)
 
 > **Simulation Focus:**  
 > Demonstrates real-time QoS data collection from distributed Raspberry Pi agents, including bandwidth, latency, jitter, and packet loss, along with data transmission via MQTT and visualization on the monitoring dashboard.
