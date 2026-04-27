@@ -163,7 +163,7 @@ doli
 
 <p align="center">
   <img src="Dashboard.png" alt="QoS Trend Graphs Raspberry Pi 1" width="24%"/>
-  <img src="Dashboard 2.png" alt="QoS Trend Graphs Raspberry Pi 2" width="24%"/>
+  <img src="Dashboard kedua.png" alt="QoS Trend Graphs Raspberry Pi 2" width="24%"/>
   <img src="Data Raspberry 1.png" alt="QoS Data Raspberry Pi 1" width="24%"/>
   <img src="Data Raspberry 2.png" alt="QoS Data Raspberry Pi 2" width="24%"/>
 </p>
