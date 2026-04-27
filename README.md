@@ -159,17 +159,18 @@ doli
 ## 📺 Visuals & Simulation
 
 ### 💻 Dashboard Interface
-*The dashboard provides clear insights into network performance across subnets.*
+*The dashboard provides clear insights into network performance across multiple Raspberry Pi agents.*
 
 <p align="center">
-  <img src="Dashboard.png" alt="QoS Trend Graphs on Raspberry Pi 1" width="32%"/>
-  <img src="Data Raspberry 1.png" alt="QoS Data Raspberry Pi 1" width="32%"/>
-  <img src="Data Raspberry 2.png" alt="QoS Data Raspberry Pi 2" width="32%"/>
+  <img src="Dashboard.png" alt="QoS Trend Graphs Raspberry Pi 1" width="24%"/>
+  <img src="Dashboard 2.png" alt="QoS Trend Graphs Raspberry Pi 2" width="24%"/>
+  <img src="Data Raspberry 1.png" alt="QoS Data Raspberry Pi 1" width="24%"/>
+  <img src="Data Raspberry 2.png" alt="QoS Data Raspberry Pi 2" width="24%"/>
 </p>
 
 <p align="center">
   <em>
-  From left to right: real-time QoS trend visualization, raw QoS data from Raspberry Pi 1, and multi-agent monitoring data from Raspberry Pi 2.
+  From left to right: real-time QoS trend visualization from Raspberry Pi 1 and Raspberry Pi 2, followed by raw QoS data records collected from each agent, enabling comparative analysis across multiple network nodes.
   </em>
 </p>
 
