@@ -26,7 +26,7 @@ I developed a distributed Quality of Service (QoS) monitoring system that enable
 * Utilize a seamless data pipeline via the MQTT protocol for high-integrity transmission.
 * Monitor network health remotely through an interactive, intuitive dashboard
   
-This is more than a simple speed test — it is a foundation for network performance optimization.
+This is more than a simple speed test — it is **a real-time network intelligence system for performance optimization.**
 
 ---
 
@@ -36,6 +36,23 @@ This is more than a simple speed test — it is a foundation for network perform
 * **Field:** Network Engineering & IoT.
 * **Institution:** National Formosa University (NFU), Taiwan
 * **Validation:** Developed in the IoT and Intelligent Cloud Application Lab under the guidance of Prof. Hui-Kai Su.
+---
+
+## 👨‍💻 My Contribution
+* Designed the distributed QoS monitoring architecture
+* Developed Raspberry Pi-based measurement agents
+* Implemented MQTT-based real-time data pipeline
+* Built backend data processing using Python and MariaDB
+* Designed dashboard for real-time and historical visualization
+
+---
+
+## 🌍 System Scale
+* Deployed across multiple subnets (A, B, C, D)
+* Multiple Raspberry Pi agents collecting data simultaneously
+* Real-time data streaming via MQTT protocol
+* Continuous monitoring in a real-world lab environment
+
 ---
 
 ## ⚙️ My Approach (How I Think)
@@ -56,6 +73,13 @@ Accurate insights require a seamless bridge between the physical and digital lay
 Raw data is complex and often difficult for administrators to interpret quickly.
 
 ➡️ I focused on transforming complex metrics into intuitive visual formats, enabling faster decision-making and quicker issue resolution.
+
+---
+
+## 🏗️ System Architecture
+
+
+This architecture illustrates how distributed agents collect network data, transmit it via MQTT, process it in a centralized server, and visualize insights in real time.
 
 ---
 
