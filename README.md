@@ -98,7 +98,7 @@ The system architecture consists of distributed QoS measurement agents deployed 
 * **🖥️ Interactive Dashboard:** A real-time web interface providing graphical representations of current and historical network performance.
 ---
 
-## 🧠 Comprehensive Reasoning (The "Why")
+## 🧠 Design Reasoning
 
 ### **The Problem: Network Disruptions**
 Critical network challenges like bandwidth caps and high latency lead to poor performance and user dissatisfaction.
@@ -129,9 +129,7 @@ This project was developed and documented as part of my IISMA 2024 academic proj
 - **Lab:** IoT and Intelligent Cloud Application Lab
 - **Project Certificate:**
 <p align="center">
-  <a href="path/to/your/certificate.pdf">
-    <img src="Achmad Doli Harahap_Sertifikat Project IISMA_page-0001.jpg" alt="IISMA 2024 Certificate" width="250px" style="border: 1px solid #eee; border-radius: 5px;"/>
-  </a>
+  <img src="Achmad Doli Harahap_Sertifikat Project IISMA_page-0001.jpg" alt="IISMA 2024 Certificate" width="350px"/>
 </p>
 
 ---
@@ -159,7 +157,8 @@ This project was developed and documented as part of my IISMA 2024 academic proj
 
 ## 🌐 Live System Access
 You can explore the live monitoring dashboard directly through the link below:
-### Link: https://hksu.ee.nfu.edu.tw/netqos/webqos/dashboard/index.php
+- **Dashboard Link:** [QoS Monitoring Dashboard](https://hksu.ee.nfu.edu.tw/netqos/webqos/dashboard/index.php)
+
 **Username**: 
 doli
 
@@ -185,7 +184,7 @@ doli
 
 <p align="center">
   <em>
-  From left to right: real-time QoS trend visualization from Raspberry Pi 1 and Raspberry Pi 2, followed by raw QoS data records collected from each agent, enabling comparative analysis across multiple network nodes.
+  The dashboard visualizes real-time QoS trends from Raspberry Pi 1 and Raspberry Pi 2, while the data tables show raw QoS records collected from each agent for comparative analysis across distributed network nodes.
   </em>
 </p>
 
@@ -218,7 +217,8 @@ The system revealed a critical network bottleneck, showing that stable bandwidth
    * **Solution:** I implemented a Data Validation phase at the server level, logging invalid data for debugging to ensure only accurate metrics are stored and visualized.
      
 ### **What I Learned**
-Working at the IoT and Intelligent Cloud Application Lab in Taiwan sharpened my skills in Data Integration and Advanced Problem-Solving. I learned to master the integration of hardware like Raspberry Pi 4 with robust software tools, developing a comprehensive understanding of real-time system synchronization. Beyond technical skills, working in a multidisciplinary environment developed my Collaborative Development capabilities, ensuring diverse components integrate into one cohesive system.
+
+Working at the IoT and Intelligent Cloud Application Lab in Taiwan strengthened my understanding of distributed monitoring systems, QoS metrics, and real-time data pipelines. I learned how to validate bandwidth and latency measurements, interpret network performance anomalies, and transform raw network data into actionable insights through dashboard visualization.
 
 ---
 
