@@ -201,11 +201,11 @@ doli
 
 ## 📊 Key Findings
 
-- Stable bandwidth performance (~1 Mbps)
-- Extremely high latency (~120,000 ms)
+- Stable bandwidth performance during testing
+- Latency values showed the importance of monitoring multiple QoS metrics, not bandwidth alone
 
 🚨 Insight:
-The system revealed a critical network bottleneck, showing that stable bandwidth does not guarantee low latency, highlighting the need for deeper QoS monitoring in real-world environments.
+The system showed that stable bandwidth does not always represent overall network quality, highlighting the need to evaluate latency, jitter, and packet loss together in real-world monitoring environments.
 
 ---
 
