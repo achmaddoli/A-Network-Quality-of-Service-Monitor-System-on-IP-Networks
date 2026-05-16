@@ -43,7 +43,7 @@ This is more than a simple speed test — it is **a real-time network intelligen
 
 As part of the group project, I focused on designing and validating the bandwidth and latency measurement workflow, integrating Raspberry Pi-based agents with the monitoring pipeline, and supporting dashboard visualization for real-time and historical QoS analysis.
 
-I also contributed to system testing in the IoT and Intelligent Cloud Application Lab, helping analyze collected data and identify latency bottlenecks despite stable bandwidth performance.
+I also contributed to system testing in the IoT and Intelligent Cloud Application Lab, helping analyze collected data and observe that stable bandwidth alone did not fully represent overall network quality.
 
 ---
 
@@ -114,7 +114,7 @@ Critical network challenges like bandwidth caps and high latency lead to poor pe
 ## Real-World Impact
 
 - **Network Visibility:** The system helped visualize bandwidth, latency, jitter, and packet loss from multiple Raspberry Pi agents in one centralized dashboard.
-- **Performance Insight:** Testing revealed that stable bandwidth did not necessarily indicate healthy network performance, as the system uncovered extremely high latency values around 120,000 ms.
+- **Performance Insight:** Testing showed that stable bandwidth did not necessarily represent overall network quality, as latency remained an important QoS metric that required continuous monitoring.
 - **Operational Efficiency:** The dashboard reduced the need to manually inspect raw network measurements by presenting QoS data in graphs and historical tables.
 
 ---
