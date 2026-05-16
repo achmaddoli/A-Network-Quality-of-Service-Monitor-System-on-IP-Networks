@@ -32,19 +32,18 @@ This is more than a simple speed test — it is **a real-time network intelligen
 
 ## 🎯 Project Context
 
-*  **Project Type:** GROUP PROJECT (IISMA Research Project)
+* **Project Type:** GROUP PROJECT (IISMA Research Project)
 * **Field:** Network Engineering & IoT.
 * **Institution:** National Formosa University (NFU), Taiwan
-* **My Role:** System Designer & Developer
+* **My Role:**  Bandwidth & Latency Lead
 * **Validation:** Developed in the IoT and Intelligent Cloud Application Lab under the guidance of Prof. Hui-Kai Su.
 ---
 
 ## 👨‍💻 My Contribution
-* Designed the distributed QoS monitoring architecture
-* Developed Raspberry Pi-based measurement agents
-* Implemented MQTT-based real-time data pipeline
-* Built backend data processing using Python and MariaDB
-* Designed dashboard for real-time and historical visualization
+
+As part of the group project, I focused on designing and validating the bandwidth and latency measurement workflow, integrating Raspberry Pi-based agents with the monitoring pipeline, and supporting dashboard visualization for real-time and historical QoS analysis.
+
+I also contributed to system testing in the IoT and Intelligent Cloud Application Lab, helping analyze collected data and identify latency bottlenecks despite stable bandwidth performance.
 
 ---
 
@@ -92,7 +91,7 @@ The system architecture consists of distributed QoS measurement agents deployed 
 ---
 
 ## 🚀 Key Features
-* **📍Real-Time Tracking:** Precise measurement of bandwidth, latency, jitter, and packet loss using iPerf3.
+* **📍 Real-Time QoS Measurement:** Measures bandwidth, latency, jitter, and packet loss using iPerf3.
 * **📡 MQTT Communication:** Data transmission via MQTT Broker for real-time distribution and message queuing.
 * **📊 Centralized Monitor Server:** A dedicated server that subscribes to topics, validates incoming data, and manages storage.
 * **💾 Historical Analysis:** Validated data is stored in MariaDB to facilitate long-term performance auditing.
@@ -106,22 +105,29 @@ Critical network challenges like bandwidth caps and high latency lead to poor pe
 * **Operational Gap:** Without real-time visibility, administrators cannot proactively resolve issues, leading to reactive maintenance.
   
 ### **The Solution: Why Agents & MQTT?**
-1. **Precision Logic:** Precision Logic: Distributed agents allow for accurate data collection across a diverse network configuration.
+1. **Distributed Measurement:** Raspberry Pi agents allow accurate QoS data collection across different subnet environments.
 2. **Data Integrity:** The MQTT protocol maintains consistency and integrity during real-time data reception.
 3. **Automated Ecosystem:** Integration of hardware and software replaces manual monitoring workloads with a cohesive, automated system.
 
 ---
 
 ## Real-World Impact
-- **Network Reliability**: Administrators can proactively identify and resolve network issues, significantly enhancing user satisfaction.
-- **Efficiency**: Transforming complex network data into actionable insights through clear visualization.
+
+- **Network Visibility:** The system helped visualize bandwidth, latency, jitter, and packet loss from multiple Raspberry Pi agents in one centralized dashboard.
+- **Performance Insight:** Testing revealed that stable bandwidth did not necessarily indicate healthy network performance, as the system uncovered extremely high latency values around 120,000 ms.
+- **Operational Efficiency:** The dashboard reduced the need to manually inspect raw network measurements by presenting QoS data in graphs and historical tables.
 
 ---
 
-## 📚 Academic Achievement
-The methodology and results of this project were peer-reviewed and documented:
-- Title: "A Network QoS Monitor System on IP Networks"
-- Award: IISMA 2024 Project Completion at National Formosa University
+## 📚 Academic Context
+
+This project was developed and documented as part of my IISMA 2024 academic project at National Formosa University.
+
+- **Title:** "A Network QoS Monitor System on IP Networks"
+- **Program:** IISMA 2024
+- **Institution:** National Formosa University, Taiwan
+- **Lab:** IoT and Intelligent Cloud Application Lab
+- **Project Certificate:**
 <p align="center">
   <a href="path/to/your/certificate.pdf">
     <img src="Achmad Doli Harahap_Sertifikat Project IISMA_page-0001.jpg" alt="IISMA 2024 Certificate" width="250px" style="border: 1px solid #eee; border-radius: 5px;"/>
@@ -168,10 +174,13 @@ doli
 *The dashboard provides clear insights into network performance across multiple Raspberry Pi agents.*
 
 <p align="center">
-  <img src="Dashboard.png" alt="QoS Trend Graphs Raspberry Pi 1" width="24%"/>
-  <img src="Dashboard kedua.png" alt="QoS Trend Graphs Raspberry Pi 2" width="24%"/>
-  <img src="Data Raspberry 1.png" alt="QoS Data Raspberry Pi 1" width="24%"/>
-  <img src="Data Raspberry 2.png" alt="QoS Data Raspberry Pi 2" width="24%"/>
+  <img src="Dashboard.png" alt="QoS Trend Graphs Raspberry Pi 1" width="48%"/>
+  <img src="Dashboard kedua.png" alt="QoS Trend Graphs Raspberry Pi 2" width="48%"/>
+</p>
+
+<p align="center">
+  <img src="Data Raspberry 1.png" alt="QoS Data Raspberry Pi 1" width="48%"/>
+  <img src="Data Raspberry 2.png" alt="QoS Data Raspberry Pi 2" width="48%"/>
 </p>
 
 <p align="center">
@@ -203,10 +212,10 @@ The system revealed a critical network bottleneck, showing that stable bandwidth
 
 ## 📈 Learning Journey
 
-### **⚠️ Challenges & Overcoming Them**
+### **⚠️ Challenges & How I Overcame Them**
 1. **Data Inconsistencies**
    * **Challenge:** During reception, some data packets might be inconsistent or contain errors.
-   * **Overcoming:** I implemented a Data Validation phase at the server level, logging invalid data for debugging to ensure only accurate metrics are stored and visualized.
+   * **Solution:** I implemented a Data Validation phase at the server level, logging invalid data for debugging to ensure only accurate metrics are stored and visualized.
      
 ### **What I Learned**
 Working at the IoT and Intelligent Cloud Application Lab in Taiwan sharpened my skills in Data Integration and Advanced Problem-Solving. I learned to master the integration of hardware like Raspberry Pi 4 with robust software tools, developing a comprehensive understanding of real-time system synchronization. Beyond technical skills, working in a multidisciplinary environment developed my Collaborative Development capabilities, ensuring diverse components integrate into one cohesive system.
