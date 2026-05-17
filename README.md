@@ -107,7 +107,7 @@ Critical network challenges like bandwidth caps and high latency lead to poor pe
 ### **The Solution: Why Agents & MQTT?**
 1. **Distributed Measurement:** Raspberry Pi agents allow accurate QoS data collection across different subnet environments.
 2. **Data Integrity:** The MQTT protocol maintains consistency and integrity during real-time data reception.
-3. **Automated Ecosystem:** Integration of hardware and software replaces manual monitoring workloads with a cohesive, automated system.
+3. **Centralized Monitoring:** Integration of hardware and software reduces manual data inspection by centralizing QoS measurements into a monitoring dashboard.
 
 ---
 
@@ -204,7 +204,7 @@ doli
 - Stable bandwidth performance during testing
 - Latency values showed the importance of monitoring multiple QoS metrics, not bandwidth alone
 
-🚨 Insight:
+🚨 **Insight:**  
 The system showed that stable bandwidth does not always represent overall network quality, highlighting the need to evaluate latency, jitter, and packet loss together in real-world monitoring environments.
 
 ---
@@ -213,8 +213,8 @@ The system showed that stable bandwidth does not always represent overall networ
 
 ### **⚠️ Challenges & How I Overcame Them**
 1. **Data Inconsistencies**
-   * **Challenge:** During reception, some data packets might be inconsistent or contain errors.
-   * **Solution:** I implemented a Data Validation phase at the server level, logging invalid data for debugging to ensure only accurate metrics are stored and visualized.
+   * **Challenge:** During data reception, some packets could be inconsistent or contain errors.
+   * **Solution:** I implemented a data validation phase at the server level, logging invalid data for debugging to ensure only accurate metrics were stored and visualized.
      
 ### **What I Learned**
 
